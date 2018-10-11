@@ -3,7 +3,7 @@ node {
         checkout scm
     }
     stage ('build') {
-        withMaven(maven: 'Maven350') {
+        withMaven(maven: 'maven3-auto') {
             sh "mvn clean install"
         }
     }
